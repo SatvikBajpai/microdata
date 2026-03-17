@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mospi-microdata"
+version = "0.1.0"
+description = "Python library for Indian government microdata (ASI, PLFS, HCES, etc.)"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "duckdb>=1.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+mcp = ["fastmcp>=3.0"]
+dev = ["pytest>=7.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mospi_microdata"]

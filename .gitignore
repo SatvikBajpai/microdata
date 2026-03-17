@@ -1,0 +1,21 @@
+# Data files (too large for git)
+data/*.duckdb
+data/.nada_cache/
+*.duckdb
+
+# Raw data downloads
+*.zip
+extracted_csv/
+
+# Python
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
